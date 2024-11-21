@@ -305,7 +305,7 @@ main {
 
 /*MEDIA QUERY PARA TABLET*/
 
-@media (max-width: 700px){
+@media (max-width: 768px){
     .nav__right {
         display: none;
     }
