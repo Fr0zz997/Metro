@@ -305,7 +305,7 @@ main {
 
 /*MEDIA QUERY PARA TABLET*/
 
-@media (max-width: 768px){
+@media (max-width: 700px){
     .nav__right {
         display: none;
     }
@@ -366,7 +366,7 @@ main {
 
 /*MEDIA QUERY PARA CELULAR*/
 
-@media (max-width: 400px){
+@media (max-width: 500px){
     
     .nav__left {
         justify-content: flex-start;
