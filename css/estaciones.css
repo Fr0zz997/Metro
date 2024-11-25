@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    background-color: #f4f4f4;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*VARIABLES*/
+
+:root {
+    --azul-oscuro: #111827;
+    --verde-claro: #278843;
+    --verde-claro2:#73A23F;
+    --verde-oscuro: #228B41;
+}
+
+
+/*HEADER*/
+.header {
+    /* background: url("/img/train.jpg") no-repeat center center/cover; */
+    /* padding: 100px 20px; */
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 2px 2px rgba(0,0,0,0.6);
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.header__title {
+    font-size: 3em;
+    text-shadow: 2px 2px 2px #333;
+}
+
+.header__parrafo {
+    font-size: 18px;
+    text-shadow: 2px 2px 2px #333;
+}
+
+/* INFO */
+.info, .gallery{
+    padding: 40px 20px;
+    text-align: center;
+}
+
+
+/* .gallery__images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery__images img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+} */
+
+.slider {
+    display: flex;
+    width: 500%;
+    padding: 0;
+    animation: slide 25s infinite alternate ease-in-out;
+    position: relative;
+}
+
+.slider img {
+    width: 20%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slider__content {
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  color: white; 
+  text-align: center; 
+  padding: 20px;
+  border-radius: 10px; 
+}
+
+@keyframes slide {
+
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25% {margin-left: -100%;}
+    40% {margin-left: -100%;}
+
+    45% {margin-left: -200%;}
+    60% {margin-left: -200%;}
+
+    65% {margin-left: -300%;}
+    80% {margin-left: -300%;}
+
+    85% {margin-left: -400%;}
+    100% {margin-left:-400%;}
+}
+
+/* MEDIA QUERY PARA TABLET */
+
+@media (max-width: 700px){
+    .news__container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .news__card {
+        width: auto;
+    }
+
+      .logo {
+        display: flex;
+        width: 100% ;
+    }
+}
+
+
+

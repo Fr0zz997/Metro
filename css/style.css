@@ -13,6 +13,49 @@ a {
     text-decoration: none;
 }
 
+/* CLASES REUTILIABLES */
+
+.parrafo {
+    text-align: center;
+    color: var(--azul-oscuro);
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    color: #fff;
+    background-color: var(--verde-claro);
+    font-weight: 600;
+}
+
+.btn:hover{
+    box-shadow: 2px 2px 2px black;
+    background-color: var(--azul-oscuro);
+    text-decoration: underline;
+}
+
+.title {
+    margin: 20px 0;
+    font-weight: 800;
+    font-size: 60px;
+    text-align: center;
+    color: var(--azul-oscuro);
+    text-shadow: 1px 2px 2px rgba(0,0,0,0.6);
+}
+
+.sub-title {
+    margin: 20px 0;
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    color: var(--azul-oscuro);
+    text-shadow: 1px 2px 2px rgba(0,0,0,0.6);
+}
+
 /*VARIABLES*/
 
 :root {
@@ -94,20 +137,6 @@ main {
     text-shadow: 1px 2px 2px rgba(0,0,0,0.6);
 }
 
-.btn {
-    display: inline-block;
-    padding: 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-top: 20px;
-    color: #fff;
-    background-color: var(--verde-claro);
-    font-weight: 600;
-}
-
-.btn:hover{
-    box-shadow: 2px 2px 2px black;
-}
 
 .hero__cards {
     width: 100%;
@@ -210,15 +239,6 @@ main {
 
 /*NOTICIAS*/
 
-.title {
-    margin: 20px 0;
-    font-weight: 800;
-    font-size: 60px;
-    text-align: center;
-    color: var(--azul-oscuro);
-    text-shadow: 1px 2px 2px rgba(0,0,0,0.6);
-}
-
 /*NEWSCARD*/
 
 .news__container {
@@ -226,6 +246,7 @@ main {
     gap: 5px;
     width: 100%;
     grid-template-columns: repeat(4, 1fr);
+    margin: 10px 0 15px 0;
 }
 
 .news__card {
@@ -234,9 +255,10 @@ main {
 }
 
 .news__card__img {
-    width: 100%;
+    width: 300px;
     height: 200px;
-    border-radius: 5px;
+    border-radius: 7px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .news__card__text {
@@ -347,6 +369,15 @@ main {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .news__card {
+        width: 70%;
+        margin: 10px auto;
+    }
+
+    .news__card__img {
+        width: 100%;
+    }
+
     .footer__container {
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
@@ -373,7 +404,8 @@ main {
     }
     
     .nav__left li img {
-        display: none;
+        display: flex;
+        width: 100%;
     }
 
     .hero__title {
