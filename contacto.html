@@ -3,15 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/rutas.css" />
-    <!-- FONTS GOOGLE INTER -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
-    
-    <title>Rutas</title>
+    <link rel="stylesheet" href="css/contacto.css">
+    <title>Contacto</title>
 </head>
 <body>
 
@@ -22,7 +16,7 @@
             <li><a href="index.html">Inicio</a></li>
             <li><a href="estaciones.html">Estaciones</a></li>
             <li><a href="rutas.html">Rutas</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="#">Contacto</a></li>
         </ul>
         <ul class="nav__right">
             <li><a href="https://www.instagram.com/metrodemaracaibo/" target="_blank"><img src="img/instagram.png" alt=""></a></li>
@@ -31,68 +25,35 @@
         </ul>
     </nav>
 
-    <!-- HEADER -->
-    <header class="header">
-        <div class="slider">
-            <img src="img/metro7.jfif" alt="">
-            <img src="img/metro3.jfif" alt="">
-            <img src="img/metro5.jfif" alt="">
-            <img src="img/metro8.jfif" alt="">
-            <img src="img/metro10.jfif" alt="">
-        </div>
-        <div class="slider__content">
-            <h1 class="header__title">Rutas Terrestres</h1>
-            <p class="header__parrafo">Muevete a donde quieras con nuestras rutas.</p>
-            <!-- <a href="#contact" class="btn">Reserva tu viaje</a> -->
-        </div>
-    </header>
+    <div class="contact-container">
+        <h2 class="sub-title">Información de Contacto</h2>
 
-    <!-- INFO -->
-    <section class="info">
-        <h2 class="title">¿Por qué usar nuestras rutas?</h2>
-        <p class="parrafo">Ofrecemos diversas rutas por todo Maracaibo a un precio totalmente accesible para nuestra población, además de unidades totalmente comodas y preparadas.</p>
-    </section>
+        <!-- Teléfono -->
+        <div class="contact-item">
+            <a href="tel:+1234567890">Teléfono</a>
+            <span>+1 (234) 567-890</span>
+        </div>
 
-    <!-- GRID 1 -->
-    <div class="news__container">
-        <div class="news__card">
-            <a href="rutas_terrestres/lalimpia.html" target="_blank"><img class="news__card__img" src="img/Rutas_Terrestres/Lalimpia.jfif" alt=""></a> 
-            <p class="news__card__text">La Limpia </p>
+        <!-- Correo -->
+        <div class="contact-item">
+            <a href="mailto:contacto@empresa.com">Enviar un correo</a>
+            <span>contacto@empresa.com</span>
         </div>
-        <div class="news__card">
-           <a href="rutas_terrestres/HumbertoMoran.html" target="_blank"><img class="news__card__img" src="img/Rutas_Terrestres/Distribuidor_hfm.jfif" alt=""></a>
-            <p class="news__card__text">Humberto Fernández Moran</p>
-        </div>
-        <div class="news__card">
-            <a href="rutas_terrestres/Final_libertador.html" target="_blank"><img class="news__card__img" src="img/Rutas_Terrestres//Final_libertador.jfif" alt=""></a>
-            <p class="news__card__text">Metro - Final libertador</p>
-        </div>
-        <div class="news__card">
-           <a href="rutas_terrestres/km4.html" target="_blank"><img class="news__card__img" src="img/Rutas_Terrestres/KM4.jpg" alt=""></a>
-            <p class="news__card__text">Kilométro 4</p>
-        </div>
-        
-     </div>
 
-     <!-- GRID 2 -->
-     <div class="news__container">
-        <div class="news__card">
-           <a href="rutas_terrestres/libertador.html" target="_blank"><img class="news__card__img" src="img/Rutas_Terrestres/libertador.jpg" alt=""></a>
-            <p class="news__card__text">Libertador</p>
+        <!-- Dirección -->
+        <div class="contact-item">
+            <p class="direccion">Dirección:</p>
+            <p class="parrafo">Av Don Manuel Belloso via al aeropuerto, Edif. Metro de Maracaibo Piso 1, Sector Altos de la Vanega Maracaibo Estado Zulia</p>
         </div>
-        <div class="news__card">
-           <a href="rutas_terrestres/km4_viaperija.html" target="_blank"><img class="news__card__img" src="img/Rutas_Terrestres/via_perija.jpg" alt=""></a> 
-            <p class="news__card__text">KM4 Via Perija </p>
-        </div>
-        <div class="news__card">
-            <a href="rutas_terrestres/Terminal_SimonBolivar.html" target="_blank"> <img class="news__card__img" src="img/Rutas_Terrestres/Terminar_simonbolivar.jpg" alt=""></a>
-            <p class="news__card__text"> Terminal Simón Bolivar </p>
-        </div>
-        
-     </div>
 
-     <!-- FOOTER -->
-     <footer class="footer">
+        <div class="contact-info">
+            <p class="parrafo">Si tienes alguna pregunta, no dudes en contactarnos a través de cualquiera de estos medios.</p>
+        </div>
+    </div>
+
+    <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3921.5515086384958!2d-71.67151392518342!3d10.614195262165666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8990ff95d90609%3A0x2ce577b8edacab3a!2sMetro%20de%20Maracaibo!5e0!3m2!1ses!2sus!4v1741284243394!5m2!1ses!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- FOOTER -->
+    <footer class="footer">
         <div class="footer__container">
         <ul class="footer__list">
             <li class="footer__title">Inicio</li>
@@ -135,7 +96,5 @@
     
         <p class="footer__parrafo">UNERMB, Proyecto 3er año, All rights reserved</p>
     </footer>
-    
-
 </body>
 </html>
