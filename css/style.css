@@ -63,6 +63,7 @@ a {
     --verde-claro: #278843;
     --verde-claro2:#73A23F;
     --verde-oscuro: #228B41;
+    --gris: #a1a2a3;
 }
 
 
@@ -72,6 +73,15 @@ a {
     background-color: #fff;
     height: 80px;
     display: flex;
+    position: relative;
+}
+
+.menu_hamburguesa {
+    display: none;
+}
+
+.label_hamburguesa {
+    display: none;
 }
 
 .nav__left {
@@ -408,8 +418,43 @@ main {
 
 @media (max-width: 500px){
     
+    .nav{
+       
+    }
+
+    .list_icon {
+        cursor: pointer;
+      
+    }
+
+    .label_hamburguesa {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 40px;
+        z-index: 6;
+    }
+
     .nav__left {
-        justify-content: flex-start;
+        display: block;
+        height: 100vh;
+        width: 100%;
+        margin: -500px;
+        font-size: 32px;
+        text-align: center;
+        background-color: #fff;
+        z-index: 5;
+
+        text-transform: uppercase;
+    }
+
+    .menu_hamburguesa:checked + .nav__left {
+        margin: 0;
+        transition: 0.5s;
+    }
+
+    .nav__left li {
+        margin: 40px 0 40px 0;
     }
     
     .nav__left li img {
