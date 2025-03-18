@@ -418,13 +418,8 @@ main {
 
 @media (max-width: 500px){
     
-    .nav{
-       
-    }
-
     .list_icon {
         cursor: pointer;
-      
     }
 
     .label_hamburguesa {
@@ -444,8 +439,12 @@ main {
         text-align: center;
         background-color: #fff;
         z-index: 5;
-
         text-transform: uppercase;
+    }
+
+    .nav__left li a:hover{
+        text-decoration: underline;
+        font-size: 32px;
     }
 
     .menu_hamburguesa:checked + .nav__left {
