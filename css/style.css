@@ -21,6 +21,12 @@ a {
     font-size: 18px;
 }
 
+.parrafo__red {
+    color: red;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
 .btn {
     display: inline-block;
     padding: 20px;
@@ -440,6 +446,10 @@ main {
         background-color: #fff;
         z-index: 5;
         text-transform: uppercase;
+    }
+
+    .parrafo__red {
+        margin-top: 20px;
     }
 
     .nav__left li a:hover{
